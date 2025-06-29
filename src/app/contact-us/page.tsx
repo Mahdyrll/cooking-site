@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 
-export default function contactUs () {
+export default function ContactUs () {
     const {
         register,
         handleSubmit,

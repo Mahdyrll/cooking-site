@@ -7,7 +7,13 @@ import Ingredients from '@/app/recipes/components/Ingredients';
 import Direction from '@/app/recipes/components/Direction';
 import SideBar from "../components/SideBar";
 
-export default async function RecipePage ({ params }: any) {
+type Props = {
+    params: {
+        id: string;
+    };
+}
+
+export default async function RecipePage ({ params }: Props) {
     const { id } = await params;
     const allRecipes = [...recipes, ...featuredRecipe];
     const recipe = allRecipes.find(item => item.id === id);

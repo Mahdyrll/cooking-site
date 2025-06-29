@@ -2,7 +2,11 @@ import posts from "@/data/blogs";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-export default async function BlogSinglePost ({ params }: { params: { id: string } }) {
+interface PageProps {
+    params: Promise<{id: string}>
+}
+
+export default async function BlogSinglePost ({ params }: PageProps) {
     const { id } = await params;
     const post = posts.find(post => post.id === id);
 

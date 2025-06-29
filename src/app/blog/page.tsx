@@ -7,7 +7,7 @@ import posts from "@/data/blogs";
 import Link from "next/link";
 
 export default function BlogPageList () {
-    const [bgBlack, setBgBlack] = useState<Number>(0)
+    const [bgBlack, setBgBlack] = useState<number>(0)
     const boxes = [1, 2, 3, 4, 5, '...', ')'];
 
     const bgChanger = (index: number) => {
