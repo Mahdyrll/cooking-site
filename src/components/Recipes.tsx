@@ -15,7 +15,7 @@ function RecipeCard ({ recipe }: { recipe: Recipe }) {
         <Link href={`/recipes/${recipe.id}`} passHref>
             <div className="bg-[linear-gradient(to_bottom,_rgba(231,249,253,0)_0%,_rgba(231,249,253,1)_100%)] rounded-[30px] px-4 pt-4 pb-8">
                 <div className="relative">
-                    <Image className="rounded-[20px]" src={recipe.image} alt={recipe.title} width={368} height={250} />
+                    <Image className="rounded-[20px]" src={recipe.image} alt="recipe" width={368} height={250} />
                     <button onClick={(e) => {
                         e.preventDefault()
                         setLiked(!liked)}} className="absolute bg-white rounded-full p-3 right-5 top-5 cursor-pointer">

@@ -2,10 +2,10 @@ import posts from "@/data/blogs";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-type Params = Promise<{ id: string }>
+// type Params = Promise<{ id: string }>
 
-export default async function BlogSinglePost (props: { params: Params}) {
-    const { id } = await props.params;
+export default async function BlogSinglePost ({ params }: { params: Promise<{ id: string }> }) {
+    const id = (await params).id
     // const id = params.id
     // const { id } = await params;
     const post = posts.find(post => post.id === id);
