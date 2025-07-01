@@ -13,6 +13,7 @@ This project uses Next.js App Router, TypeScript, and Tailwind CSS with modular 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Figma](https://figma.com) (UI Source)
+- [React Hook Form](https://react-hook-form.com/)
 
 ---
 
